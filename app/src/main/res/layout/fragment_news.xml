@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4e9e9"
+    android:orientation="vertical"
+    tools:context="where.example.com.news.NewsActivityFragment"
+    tools:showIn="@layout/activity_news">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/news_image"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="5dp"/>
+
+    <View
+        android:id="@+id/Titlewhitecard"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/news_image"
+        android:background="#ffffff"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp">
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TITLE"
+        android:textColor="@color/GreyColor"
+        android:textSize="30dp"
+        android:fontFamily="true"
+        android:id="@+id/title_txt"
+        android:layout_alignLeft="@id/Titlewhitecard"
+        android:layout_alignTop="@id/Titlewhitecard"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/title_txt"
+    android:id="@+id/date"
+    android:layout_marginTop="10dp">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/Titlewhitecard"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/calender_image"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_textview"
+        android:textColor="@color/GreyColor" />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/GreyColor"
+        android:textSize="20dp"
+        android:layout_below="@+id/date"
+        android:fontFamily="true"
+        android:id="@+id/description_txt"
+        android:layout_alignLeft="@id/Titlewhitecard"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
+</ScrollView>
